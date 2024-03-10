@@ -1,0 +1,123 @@
+#include <iostream>
+#include <string>
+#include <climits>
+
+using namespace std;
+
+
+/*-----------------------Task 1-----------------------
+
+int main() {
+    cout << "Enter 6 digits number: ";
+    string number_str;
+    cin >> number_str;
+
+    if (number_str.length() != 6) {
+        cout << "Error. Invalid. This number is not 6 digits number." << endl;
+        return 1;
+    }
+
+    int sum_first_half = 0;
+    int sum_second_half = 0;
+    for (int i = 0; i < 6; ++i) {
+        int digit = number_str[i] - '0';
+        if (i < 3) {
+            sum_first_half += digit;
+        }
+        else {
+            sum_second_half += digit;
+        }
+    }
+
+    if (sum_first_half == sum_second_half) {
+        cout << "Number " << number_str << " - happy number! :3" << endl;
+    }
+    else {
+        cout << "Number " << number_str << " not happy number :(" << endl;
+    }
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 2-----------------------
+
+int main() {
+    cout << "Enter 4 digit number: ";
+    string number_str;
+    cin >> number_str;
+
+    if (number_str.length() != 4) {
+        cout << "Error: invalid, this number is not 4 digits." << endl;
+        return 1;
+    }
+
+    swap(number_str[0], number_str[1]);
+    swap(number_str[2], number_str[3]);
+
+    cout << "Result number: " << number_str << endl;
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 3-----------------------
+
+int main() {
+    int max_number = INT_MIN;
+    int number;
+
+    for (int i = 0; i < 7; ++i) {
+        cout << "Enter number " << i + 1 << ": ";
+        cin >> number;
+
+        if (number > max_number) {
+            max_number = number;
+        }
+    }
+
+    cout << "Max number: " << max_number << endl;
+
+    return 0;
+}*/
+
+
+/*-----------------------Task 4-----------------------
+
+int main() {
+    double distance_AB, distance_BC;
+    double cargo_weight;
+    double fuel_needed = 0;
+
+    cout << "Enter distnace between A and B (y km): ";
+    cin >> distance_AB;
+
+    cout << "Enter distnace between B and C (y km): ";
+    cin >> distance_BC;
+
+    cout << "Enter vagy vantagy (y kg): ";
+    cin >> cargo_weight;
+
+    if (cargo_weight <= 500) {
+        fuel_needed = distance_AB * 1 + distance_BC * 1;
+    }
+    else if (cargo_weight <= 1000) {
+        fuel_needed = distance_AB * 4 + distance_BC * 4;
+    }
+    else if (cargo_weight <= 1500) {
+        fuel_needed = distance_AB * 7 + distance_BC * 7;
+    }
+    else if (cargo_weight <= 2000) {
+        fuel_needed = distance_AB * 9 + distance_BC * 9;
+    }
+    else {
+        cout << "Plane cant carry that heavy vantage." << endl;
+        return 1;
+    }
+
+    cout << "Min amount of paluvo, needed to dozapravka in punct B: " << fuel_needed << " litriv" << endl;
+
+    return 0;
+}*/
+
+//----------------------- END -----------------------
